@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1043929695305",
+    "firebase_url": "https://devmemo-8f0f1.firebaseio.com",
+    "project_id": "devmemo-8f0f1",
+    "storage_bucket": "devmemo-8f0f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1043929695305:android:159e6a04e4d3c6e9406b98",
+        "android_client_info": {
+          "package_name": "com.IichiroKawashima.DevMemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1043929695305-jbfpt0qsnb48v4k0obcaaq619c87n396.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCltOSSBmF0HQkI5ps1Ljpm6THxwZWesvY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1043929695305-jbfpt0qsnb48v4k0obcaaq619c87n396.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1043929695305-ll0u98jaj3l6gvtc9iskc2ec39igukhc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.IichiroKawashima.DevMemo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
