@@ -1,4 +1,4 @@
-package com.IichiroKawashima.DevMemo
+package com.IichiroKawashima.devmemo
 
 import org.junit.Test
 
