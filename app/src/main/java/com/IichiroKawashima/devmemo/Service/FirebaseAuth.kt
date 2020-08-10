@@ -1,17 +1,19 @@
 package com.IichiroKawashima.devmemo.Service
 
-import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
 object FirebaseAuth {
 
+    private val auth = FirebaseAuth.getInstance()
+
     fun login(email: String, password: String) {
-        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password).addOnSuccessListener { result ->
-            val user = FirebaseAuth.getInstance().currentUser
+        auth.signInWithEmailAndPassword(email, password).addOnSuccessListener { result ->
+            val user = auth.currentUser
+
         }
     }
 
     fun logout() {
-        FirebaseAuth.getInstance().signOut()
+        auth.signOut()
     }
 }

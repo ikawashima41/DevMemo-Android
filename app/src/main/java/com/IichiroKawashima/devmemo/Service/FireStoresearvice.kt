@@ -6,7 +6,7 @@ import java.util.*
 
 object FireStoresearvice {
 
-    val db: FirebaseFirestore = FirebaseFirestore.getInstance()
+    private val db: FirebaseFirestore = FirebaseFirestore.getInstance()
 
     fun postData() {
 
