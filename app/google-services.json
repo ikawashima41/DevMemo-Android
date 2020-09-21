@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:489434110524:android:b34a33e9695193bdd08139",
         "android_client_info": {
-          "package_name": "com.IichiroKawashima.devmemo"
+          "package_name": "com.iichirokawashima.devmemo"
         }
       },
       "oauth_client": [
@@ -35,7 +35,7 @@
               "client_id": "489434110524-e0bvj7661me12ac0k1vv02seij78n6q6.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.IichiroKawashima.devmemo"
+                "bundle_id": "com.iichirokawashima.devmemo"
               }
             }
           ]

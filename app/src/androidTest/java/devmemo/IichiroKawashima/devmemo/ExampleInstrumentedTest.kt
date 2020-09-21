@@ -1,4 +1,4 @@
-package com.IichiroKawashima.devmemo
+package devmemo.IichiroKawashima.devmemo
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

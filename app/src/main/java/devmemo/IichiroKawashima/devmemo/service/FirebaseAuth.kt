@@ -1,4 +1,4 @@
-package com.IichiroKawashima.devmemo.Service
+package devmemo.iichirokawashima.devmemo.service
 
 import com.google.firebase.auth.FirebaseAuth
 
@@ -8,6 +8,7 @@ object FirebaseAuth {
 
     fun login(email: String, password: String) {
         auth.signInWithEmailAndPassword(email, password).addOnSuccessListener { result ->
+
             val user = auth.currentUser
 
         }

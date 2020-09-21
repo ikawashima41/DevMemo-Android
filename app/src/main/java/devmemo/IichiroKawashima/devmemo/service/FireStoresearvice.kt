@@ -1,7 +1,7 @@
-package com.IichiroKawashima.devmemo.Service
+package devmemo.iichirokawashima.devmemo.service
 
-import com.IichiroKawashima.devmemo.Entity.User
 import com.google.firebase.firestore.FirebaseFirestore
+import devmemo.iichirokawashima.devmemo.entity.User
 import java.util.*
 
 object FireStoresearvice {

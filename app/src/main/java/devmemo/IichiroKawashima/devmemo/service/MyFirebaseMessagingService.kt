@@ -1,4 +1,4 @@
-package com.IichiroKawashima.devmemo.Service
+package devmemo.iichirokawashima.devmemo.service
 
 import android.util.Log
 import com.google.firebase.messaging.FirebaseMessagingService

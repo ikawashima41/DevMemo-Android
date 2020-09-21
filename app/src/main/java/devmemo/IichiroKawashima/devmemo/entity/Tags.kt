@@ -1,4 +1,4 @@
-package com.IichiroKawashima.devmemo.Entity
+package devmemo.iichirokawashima.devmemo.entity
 
 import java.util.*
 
