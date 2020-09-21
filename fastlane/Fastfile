@@ -1,0 +1,73 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:android)
+
+platform :android do
+
+  before_all do
+    test
+
+    # URLを追加する
+    # $SLACK_URL = "slackのweb hookのurl"
+  end
+
+  desc "Runs all the tests"
+
+  desc "Submit a new Beta Build to Crashlytics Beta"
+  lane :beta do
+
+    gradle(
+      task: "bundle",
+      build_type: "Debug"
+    )
+
+    firebase_app_distribution(
+      app: "1:639853856723:android:d9a873cf5963969da3d126",
+      groups: "beta-testers",
+      release_notes_file: "/path/to/release-notes.txt",
+      firebase_cli_path: "/absolute/path/to/firebase/cli/binary"
+    )
+  end
+
+  desc "Deploy a new version to the Google Play"
+  lane :deploy do
+    gradle(
+      task: "bundle",
+      build_type: "Release"
+    )
+
+    # TODO: API keyを発行してもらう。AppFileの設定修正
+    # upload_to_play_store
+  end
+
+  private lane :test do
+    gradle(task: "test")
+  end
+
+  after_all do |lane|
+    # slack(
+    #     message: ":tada: Successfully deployed new App Update.＼(^o^)／"
+    #   )
+  end
+
+  error do |lane, exception|
+    # slack(
+    #    message: exception.message,
+    #    success: false
+    # )
+  end
+end
+
